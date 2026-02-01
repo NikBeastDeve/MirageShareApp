@@ -84,6 +84,7 @@ actor SharedVirtualDisplayManager {
         case clientNotFound(StreamID)
         case spaceNotFound(CGDirectDisplayID)
         case scDisplayNotFound(CGDirectDisplayID)
+        case screenRecordingPermissionDenied
 
         var errorDescription: String? {
             switch self {
@@ -99,6 +100,8 @@ actor SharedVirtualDisplayManager {
                 "No space found for display \(displayID)"
             case let .scDisplayNotFound(displayID):
                 "SCDisplay not found for virtual display \(displayID)"
+            case .screenRecordingPermissionDenied:
+                "Screen recording permission denied"
             }
         }
     }

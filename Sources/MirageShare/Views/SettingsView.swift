@@ -184,11 +184,9 @@ struct SettingsView: View {
     }
 
     private func checkPermissions() {
-        // Check and request accessibility permission
+        // Check and request accessibility permission (only when user explicitly clicks)
         let permissionManager = MirageAccessibilityPermissionManager()
-        if !permissionManager.isAccessibilityGranted {
-            permissionManager.checkAndPromptIfNeeded()
-        }
+        permissionManager.checkAndPromptIfNeeded()
 
         // Check and request screen recording permission (uses SCShareableContent)
         Task {

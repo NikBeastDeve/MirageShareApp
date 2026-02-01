@@ -159,6 +159,9 @@ public extension MirageHostService {
     }
 
     func refreshWindows() async throws {
+        guard hasScreenRecordingPermission() else {
+            throw MirageError.permissionDenied("Screen recording permission is required")
+        }
         let content = try await SCShareableContent.excludingDesktopWindows(
             false,
             onScreenWindowsOnly: false // Include minimized/off-screen windows

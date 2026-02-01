@@ -14,6 +14,15 @@ import Foundation
 
 @MainActor
 public extension MirageHostService {
+    /// Check if screen recording permission is granted without prompting.
+    private func checkScreenRecordingPermission() throws {
+        if #available(macOS 11.0, *) {
+            guard CGPreflightScreenCaptureAccess() else {
+                throw MirageError.permissionDenied("Screen recording permission is required")
+            }
+        }
+    }
+
     func startStream(
         for window: MirageWindow,
         to client: MirageConnectedClient,
@@ -35,6 +44,9 @@ public extension MirageHostService {
         // hdr: Bool = false
     )
     async throws -> MirageStreamSession {
+        // Check permission first
+        try checkScreenRecordingPermission()
+
         // Clear any stuck modifier state from previous streams
         inputController.clearAllModifiers()
 

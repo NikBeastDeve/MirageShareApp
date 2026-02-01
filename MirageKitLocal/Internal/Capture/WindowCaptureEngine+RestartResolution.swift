@@ -19,6 +19,14 @@ extension WindowCaptureEngine {
         return windowList?.first?[kCGWindowOwnerPID] as? pid_t
     }
 
+    /// Check if screen recording permission is granted without prompting.
+    private func hasScreenRecordingPermission() -> Bool {
+        if #available(macOS 11.0, *) {
+            return CGPreflightScreenCaptureAccess()
+        }
+        return true
+    }
+
     func resolveCaptureTargetsForRestart(
         config: CaptureSessionConfiguration,
         mode: CaptureMode,
@@ -26,6 +34,12 @@ extension WindowCaptureEngine {
         initialDelayMs: Int = 80
     )
     async -> CaptureSessionConfiguration {
+        // Check permission first to avoid repeated prompts
+        guard hasScreenRecordingPermission() else {
+            MirageLogger.error(.capture, "Cannot resolve capture targets: screen recording permission not granted")
+            return config
+        }
+
         let attempts = max(1, maxAttempts)
         var delayMs = max(40, initialDelayMs)
 

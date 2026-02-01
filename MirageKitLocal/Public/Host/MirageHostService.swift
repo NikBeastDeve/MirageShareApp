@@ -19,6 +19,14 @@ import ScreenCaptureKit
 @Observable
 @MainActor
 public final class MirageHostService {
+    /// Check if screen recording permission is granted without prompting.
+    internal func hasScreenRecordingPermission() -> Bool {
+        if #available(macOS 11.0, *) {
+            return CGPreflightScreenCaptureAccess()
+        }
+        return true
+    }
+
     /// Available windows for streaming
     public internal(set) var availableWindows: [MirageWindow] = []
 

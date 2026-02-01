@@ -17,6 +17,7 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
     func applicationDidFinishLaunching(_ notification: Notification) {
         setupMenuBar()
         checkPermissions()
+        showMainWindow()
     }
 
     func applicationShouldTerminateAfterLastWindowClosed(_ sender: NSApplication) -> Bool {
@@ -55,11 +56,10 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
     }
 
     private func checkPermissions() {
-        // Check and request accessibility permission
+        // Check accessibility permission without prompting on launch
+        // (user can manually check in Settings if needed)
         let permissionManager = MirageAccessibilityPermissionManager()
-        if !permissionManager.isAccessibilityGranted {
-            permissionManager.checkAndPromptIfNeeded()
-        }
+        permissionManager.refreshPermissionState()
 
         // Screen recording permission will be requested automatically when needed
     }

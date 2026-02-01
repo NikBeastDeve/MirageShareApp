@@ -15,8 +15,23 @@ import Foundation
 extension AppStreamManager {
     // MARK: - Window Monitoring
 
+    /// Check if screen recording permission is granted without prompting.
+    private func hasScreenRecordingPermission() -> Bool {
+        if #available(macOS 11.0, *) {
+            return CGPreflightScreenCaptureAccess()
+        }
+        return true
+    }
+
     func startMonitoringIfNeeded() {
         guard !isMonitoring else { return }
+
+        // Don't start monitoring without permission to avoid repeated prompts
+        guard hasScreenRecordingPermission() else {
+            logger.warning("Cannot start window monitoring: screen recording permission not granted")
+            return
+        }
+
         isMonitoring = true
 
         monitoringTask = Task { [weak self] in

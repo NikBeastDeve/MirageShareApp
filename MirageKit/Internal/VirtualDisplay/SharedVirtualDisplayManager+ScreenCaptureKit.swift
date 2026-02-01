@@ -16,9 +16,22 @@ import Foundation
 extension SharedVirtualDisplayManager {
     // MARK: - ScreenCaptureKit Integration
 
+    /// Check if screen recording permission is granted without prompting.
+    private func hasScreenRecordingPermission() -> Bool {
+        if #available(macOS 11.0, *) {
+            return CGPreflightScreenCaptureAccess()
+        }
+        return true
+    }
+
     /// Find the SCDisplay corresponding to the shared virtual display
     func findSCDisplay(maxAttempts: Int = 8) async throws -> SCDisplayWrapper {
         guard sharedDisplay != nil else { throw SharedDisplayError.noActiveDisplay }
+
+        // Check permission first to avoid repeated prompts
+        guard hasScreenRecordingPermission() else {
+            throw SharedDisplayError.screenRecordingPermissionDenied
+        }
 
         var attempt = 0
         var delayMs = 120
@@ -77,6 +90,9 @@ extension SharedVirtualDisplayManager {
     /// When mirroring is active, capturing the main display can avoid mirrored-display
     /// cadence issues that sometimes appear on virtual targets.
     func findMainSCDisplay() async throws -> SCDisplayWrapper {
+        guard hasScreenRecordingPermission() else {
+            throw SharedDisplayError.screenRecordingPermissionDenied
+        }
         let mainDisplayID = CGMainDisplayID()
         let content = try await SCShareableContent.excludingDesktopWindows(false, onScreenWindowsOnly: false)
 

@@ -19,6 +19,14 @@ extension StreamContext {
         let display: SCDisplayWrapper
     }
 
+    /// Check if screen recording permission is granted without prompting.
+    private func hasScreenRecordingPermission() -> Bool {
+        if #available(macOS 11.0, *) {
+            return CGPreflightScreenCaptureAccess()
+        }
+        return true
+    }
+
     func resolveVirtualDisplayTargets(
         windowID: WindowID,
         applicationPID: pid_t,
@@ -28,6 +36,11 @@ extension StreamContext {
         initialDelayMs: Int = 80
     )
     async throws -> VirtualDisplayTargets {
+        // Check permission first to avoid repeated prompts
+        guard hasScreenRecordingPermission() else {
+            throw MirageError.permissionDenied("Screen recording permission is required")
+        }
+
         let attempts = max(1, maxAttempts)
         var delayMs = max(40, initialDelayMs)
 
