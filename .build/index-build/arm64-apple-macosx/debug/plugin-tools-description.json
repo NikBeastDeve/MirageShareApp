@@ -1,0 +1,342 @@
+{
+  "builtTestProducts" : [
+
+  ],
+  "copyCommands" : {
+
+  },
+  "explicitTargetDependencyImportCheckingMode" : {
+    "none" : {
+
+    }
+  },
+  "generatedSourceTargetSet" : [
+
+  ],
+  "pluginDescriptions" : [
+
+  ],
+  "swiftCommands" : {
+    "C.MirageShare-arm64-apple-macosx16.0-debug.module" : {
+      "executable" : "/Applications/Xcode-16.4.0.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "fileList" : "/Users/nikita.galaganov/MirageShareApp/.build/index-build/arm64-apple-macosx/debug/MirageShare.build/sources",
+      "importPath" : "/Users/nikita.galaganov/MirageShareApp/.build/index-build/arm64-apple-macosx/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/nikita.galaganov/MirageShareApp/Sources/MirageShare/AppDelegate.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/nikita.galaganov/MirageShareApp/Sources/MirageShare/Client/ClientManager.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/nikita.galaganov/MirageShareApp/Sources/MirageShare/Client/HostBrowser.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/nikita.galaganov/MirageShareApp/Sources/MirageShare/Host/HostManager.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/nikita.galaganov/MirageShareApp/Sources/MirageShare/MirageShareApp.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/nikita.galaganov/MirageShareApp/Sources/MirageShare/MirageShareState.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/nikita.galaganov/MirageShareApp/Sources/MirageShare/Views/ClientView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/nikita.galaganov/MirageShareApp/Sources/MirageShare/Views/ContentView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/nikita.galaganov/MirageShareApp/Sources/MirageShare/Views/HostView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/nikita.galaganov/MirageShareApp/Sources/MirageShare/Views/SettingsView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/nikita.galaganov/MirageShareApp/Sources/MirageShare/Views/StreamWindowView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/nikita.galaganov/MirageShareApp/.build/index-build/arm64-apple-macosx/debug/swift-version-239F2A40393FBBF.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/nikita.galaganov/MirageShareApp/.build/index-build/arm64-apple-macosx/debug/MirageShare.build/sources"
+        }
+      ],
+      "isLibrary" : false,
+      "moduleName" : "MirageShare",
+      "moduleOutputPath" : "/Users/nikita.galaganov/MirageShareApp/.build/index-build/arm64-apple-macosx/debug/Modules/MirageShare.swiftmodule",
+      "objects" : [
+        "/Users/nikita.galaganov/MirageShareApp/.build/index-build/arm64-apple-macosx/debug/MirageShare.build/AppDelegate.swift.o",
+        "/Users/nikita.galaganov/MirageShareApp/.build/index-build/arm64-apple-macosx/debug/MirageShare.build/ClientManager.swift.o",
+        "/Users/nikita.galaganov/MirageShareApp/.build/index-build/arm64-apple-macosx/debug/MirageShare.build/HostBrowser.swift.o",
+        "/Users/nikita.galaganov/MirageShareApp/.build/index-build/arm64-apple-macosx/debug/MirageShare.build/HostManager.swift.o",
+        "/Users/nikita.galaganov/MirageShareApp/.build/index-build/arm64-apple-macosx/debug/MirageShare.build/MirageShareApp.swift.o",
+        "/Users/nikita.galaganov/MirageShareApp/.build/index-build/arm64-apple-macosx/debug/MirageShare.build/MirageShareState.swift.o",
+        "/Users/nikita.galaganov/MirageShareApp/.build/index-build/arm64-apple-macosx/debug/MirageShare.build/ClientView.swift.o",
+        "/Users/nikita.galaganov/MirageShareApp/.build/index-build/arm64-apple-macosx/debug/MirageShare.build/ContentView.swift.o",
+        "/Users/nikita.galaganov/MirageShareApp/.build/index-build/arm64-apple-macosx/debug/MirageShare.build/HostView.swift.o",
+        "/Users/nikita.galaganov/MirageShareApp/.build/index-build/arm64-apple-macosx/debug/MirageShare.build/SettingsView.swift.o",
+        "/Users/nikita.galaganov/MirageShareApp/.build/index-build/arm64-apple-macosx/debug/MirageShare.build/StreamWindowView.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "arm64-apple-macosx15.0",
+        "-enable-batch-mode",
+        "-index-store-path",
+        "/Users/nikita.galaganov/MirageShareApp/.build/index-build/arm64-apple-macosx/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-j14",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-module-cache-path",
+        "/Users/nikita.galaganov/MirageShareApp/.build/index-build/arm64-apple-macosx/debug/ModuleCache",
+        "-parseable-output",
+        "-swift-version",
+        "6",
+        "-enable-experimental-feature",
+        "StrictConcurrency",
+        "-Xfrontend",
+        "-experimental-lazy-typecheck",
+        "-Xfrontend",
+        "-experimental-skip-all-function-bodies",
+        "-Xfrontend",
+        "-experimental-allow-module-with-compiler-errors",
+        "-Xfrontend",
+        "-empty-abi-descriptor",
+        "-sdk",
+        "/Applications/Xcode-16.4.0.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk",
+        "-F",
+        "/Applications/Xcode-16.4.0.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-F",
+        "/Applications/Xcode-16.4.0.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-I",
+        "/Applications/Xcode-16.4.0.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-L",
+        "/Applications/Xcode-16.4.0.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-g",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Applications/Xcode-16.4.0.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode-16.4.0.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode-16.4.0.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "mirageshareapp"
+      ],
+      "outputFileMapPath" : "/Users/nikita.galaganov/MirageShareApp/.build/index-build/arm64-apple-macosx/debug/MirageShare.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/nikita.galaganov/MirageShareApp/.build/index-build/arm64-apple-macosx/debug/Modules/MirageShare.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : true,
+      "sources" : [
+        "/Users/nikita.galaganov/MirageShareApp/Sources/MirageShare/AppDelegate.swift",
+        "/Users/nikita.galaganov/MirageShareApp/Sources/MirageShare/Client/ClientManager.swift",
+        "/Users/nikita.galaganov/MirageShareApp/Sources/MirageShare/Client/HostBrowser.swift",
+        "/Users/nikita.galaganov/MirageShareApp/Sources/MirageShare/Host/HostManager.swift",
+        "/Users/nikita.galaganov/MirageShareApp/Sources/MirageShare/MirageShareApp.swift",
+        "/Users/nikita.galaganov/MirageShareApp/Sources/MirageShare/MirageShareState.swift",
+        "/Users/nikita.galaganov/MirageShareApp/Sources/MirageShare/Views/ClientView.swift",
+        "/Users/nikita.galaganov/MirageShareApp/Sources/MirageShare/Views/ContentView.swift",
+        "/Users/nikita.galaganov/MirageShareApp/Sources/MirageShare/Views/HostView.swift",
+        "/Users/nikita.galaganov/MirageShareApp/Sources/MirageShare/Views/SettingsView.swift",
+        "/Users/nikita.galaganov/MirageShareApp/Sources/MirageShare/Views/StreamWindowView.swift"
+      ],
+      "tempsPath" : "/Users/nikita.galaganov/MirageShareApp/.build/index-build/arm64-apple-macosx/debug/MirageShare.build",
+      "wholeModuleOptimization" : false
+    }
+  },
+  "swiftFrontendCommands" : {
+
+  },
+  "swiftTargetScanArgs" : {
+    "MirageShare" : [
+      "/Applications/Xcode-16.4.0.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "-module-name",
+      "MirageShare",
+      "-package-name",
+      "mirageshareapp",
+      "-incremental",
+      "-c",
+      "/Users/nikita.galaganov/MirageShareApp/Sources/MirageShare/AppDelegate.swift",
+      "/Users/nikita.galaganov/MirageShareApp/Sources/MirageShare/Client/ClientManager.swift",
+      "/Users/nikita.galaganov/MirageShareApp/Sources/MirageShare/Client/HostBrowser.swift",
+      "/Users/nikita.galaganov/MirageShareApp/Sources/MirageShare/Host/HostManager.swift",
+      "/Users/nikita.galaganov/MirageShareApp/Sources/MirageShare/MirageShareApp.swift",
+      "/Users/nikita.galaganov/MirageShareApp/Sources/MirageShare/MirageShareState.swift",
+      "/Users/nikita.galaganov/MirageShareApp/Sources/MirageShare/Views/ClientView.swift",
+      "/Users/nikita.galaganov/MirageShareApp/Sources/MirageShare/Views/ContentView.swift",
+      "/Users/nikita.galaganov/MirageShareApp/Sources/MirageShare/Views/HostView.swift",
+      "/Users/nikita.galaganov/MirageShareApp/Sources/MirageShare/Views/SettingsView.swift",
+      "/Users/nikita.galaganov/MirageShareApp/Sources/MirageShare/Views/StreamWindowView.swift",
+      "-I",
+      "/Users/nikita.galaganov/MirageShareApp/.build/index-build/arm64-apple-macosx/debug/Modules",
+      "-target",
+      "arm64-apple-macosx15.0",
+      "-enable-batch-mode",
+      "-index-store-path",
+      "/Users/nikita.galaganov/MirageShareApp/.build/index-build/arm64-apple-macosx/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-j14",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-module-cache-path",
+      "/Users/nikita.galaganov/MirageShareApp/.build/index-build/arm64-apple-macosx/debug/ModuleCache",
+      "-parseable-output",
+      "-swift-version",
+      "6",
+      "-enable-experimental-feature",
+      "StrictConcurrency",
+      "-Xfrontend",
+      "-experimental-lazy-typecheck",
+      "-Xfrontend",
+      "-experimental-skip-all-function-bodies",
+      "-Xfrontend",
+      "-experimental-allow-module-with-compiler-errors",
+      "-Xfrontend",
+      "-empty-abi-descriptor",
+      "-sdk",
+      "/Applications/Xcode-16.4.0.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk",
+      "-F",
+      "/Applications/Xcode-16.4.0.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-F",
+      "/Applications/Xcode-16.4.0.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-I",
+      "/Applications/Xcode-16.4.0.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-L",
+      "/Applications/Xcode-16.4.0.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-g",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Applications/Xcode-16.4.0.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode-16.4.0.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode-16.4.0.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "mirageshareapp",
+      "-driver-use-frontend-path",
+      "/Applications/Xcode-16.4.0.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    ]
+  },
+  "targetDependencyMap" : {
+    "MirageShare" : [
+
+    ]
+  },
+  "testDiscoveryCommands" : {
+
+  },
+  "testEntryPointCommands" : {
+
+  },
+  "traitConfiguration" : {
+    "enableAllTraits" : false
+  },
+  "writeCommands" : {
+    "/Users/nikita.galaganov/MirageShareApp/.build/index-build/arm64-apple-macosx/debug/MirageShare.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/nikita.galaganov/MirageShareApp/Sources/MirageShare/AppDelegate.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/nikita.galaganov/MirageShareApp/Sources/MirageShare/Client/ClientManager.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/nikita.galaganov/MirageShareApp/Sources/MirageShare/Client/HostBrowser.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/nikita.galaganov/MirageShareApp/Sources/MirageShare/Host/HostManager.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/nikita.galaganov/MirageShareApp/Sources/MirageShare/MirageShareApp.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/nikita.galaganov/MirageShareApp/Sources/MirageShare/MirageShareState.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/nikita.galaganov/MirageShareApp/Sources/MirageShare/Views/ClientView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/nikita.galaganov/MirageShareApp/Sources/MirageShare/Views/ContentView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/nikita.galaganov/MirageShareApp/Sources/MirageShare/Views/HostView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/nikita.galaganov/MirageShareApp/Sources/MirageShare/Views/SettingsView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/nikita.galaganov/MirageShareApp/Sources/MirageShare/Views/StreamWindowView.swift"
+        }
+      ],
+      "outputFilePath" : "/Users/nikita.galaganov/MirageShareApp/.build/index-build/arm64-apple-macosx/debug/MirageShare.build/sources"
+    },
+    "/Users/nikita.galaganov/MirageShareApp/.build/index-build/arm64-apple-macosx/debug/swift-version-239F2A40393FBBF.txt" : {
+      "alwaysOutOfDate" : true,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<swift-get-version>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Applications/Xcode-16.4.0.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+        }
+      ],
+      "outputFilePath" : "/Users/nikita.galaganov/MirageShareApp/.build/index-build/arm64-apple-macosx/debug/swift-version-239F2A40393FBBF.txt"
+    }
+  }
+}

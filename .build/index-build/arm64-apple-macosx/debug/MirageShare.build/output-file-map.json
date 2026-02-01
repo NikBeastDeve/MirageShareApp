@@ -1,0 +1,71 @@
+{
+  "": {
+    "swift-dependencies": "/Users/nikita.galaganov/MirageShareApp/.build/index-build/arm64-apple-macosx/debug/MirageShare.build/master.swiftdeps"
+  },
+  "/Users/nikita.galaganov/MirageShareApp/Sources/MirageShare/AppDelegate.swift": {
+    "dependencies": "/Users/nikita.galaganov/MirageShareApp/.build/index-build/arm64-apple-macosx/debug/MirageShare.build/AppDelegate.d",
+    "object": "/Users/nikita.galaganov/MirageShareApp/.build/index-build/arm64-apple-macosx/debug/MirageShare.build/AppDelegate.swift.o",
+    "swiftmodule": "/Users/nikita.galaganov/MirageShareApp/.build/index-build/arm64-apple-macosx/debug/MirageShare.build/AppDelegate~partial.swiftmodule",
+    "swift-dependencies": "/Users/nikita.galaganov/MirageShareApp/.build/index-build/arm64-apple-macosx/debug/MirageShare.build/AppDelegate.swiftdeps"
+  },
+  "/Users/nikita.galaganov/MirageShareApp/Sources/MirageShare/Client/ClientManager.swift": {
+    "dependencies": "/Users/nikita.galaganov/MirageShareApp/.build/index-build/arm64-apple-macosx/debug/MirageShare.build/ClientManager.d",
+    "object": "/Users/nikita.galaganov/MirageShareApp/.build/index-build/arm64-apple-macosx/debug/MirageShare.build/ClientManager.swift.o",
+    "swiftmodule": "/Users/nikita.galaganov/MirageShareApp/.build/index-build/arm64-apple-macosx/debug/MirageShare.build/ClientManager~partial.swiftmodule",
+    "swift-dependencies": "/Users/nikita.galaganov/MirageShareApp/.build/index-build/arm64-apple-macosx/debug/MirageShare.build/ClientManager.swiftdeps"
+  },
+  "/Users/nikita.galaganov/MirageShareApp/Sources/MirageShare/Client/HostBrowser.swift": {
+    "dependencies": "/Users/nikita.galaganov/MirageShareApp/.build/index-build/arm64-apple-macosx/debug/MirageShare.build/HostBrowser.d",
+    "object": "/Users/nikita.galaganov/MirageShareApp/.build/index-build/arm64-apple-macosx/debug/MirageShare.build/HostBrowser.swift.o",
+    "swiftmodule": "/Users/nikita.galaganov/MirageShareApp/.build/index-build/arm64-apple-macosx/debug/MirageShare.build/HostBrowser~partial.swiftmodule",
+    "swift-dependencies": "/Users/nikita.galaganov/MirageShareApp/.build/index-build/arm64-apple-macosx/debug/MirageShare.build/HostBrowser.swiftdeps"
+  },
+  "/Users/nikita.galaganov/MirageShareApp/Sources/MirageShare/Host/HostManager.swift": {
+    "dependencies": "/Users/nikita.galaganov/MirageShareApp/.build/index-build/arm64-apple-macosx/debug/MirageShare.build/HostManager.d",
+    "object": "/Users/nikita.galaganov/MirageShareApp/.build/index-build/arm64-apple-macosx/debug/MirageShare.build/HostManager.swift.o",
+    "swiftmodule": "/Users/nikita.galaganov/MirageShareApp/.build/index-build/arm64-apple-macosx/debug/MirageShare.build/HostManager~partial.swiftmodule",
+    "swift-dependencies": "/Users/nikita.galaganov/MirageShareApp/.build/index-build/arm64-apple-macosx/debug/MirageShare.build/HostManager.swiftdeps"
+  },
+  "/Users/nikita.galaganov/MirageShareApp/Sources/MirageShare/MirageShareApp.swift": {
+    "dependencies": "/Users/nikita.galaganov/MirageShareApp/.build/index-build/arm64-apple-macosx/debug/MirageShare.build/MirageShareApp.d",
+    "object": "/Users/nikita.galaganov/MirageShareApp/.build/index-build/arm64-apple-macosx/debug/MirageShare.build/MirageShareApp.swift.o",
+    "swiftmodule": "/Users/nikita.galaganov/MirageShareApp/.build/index-build/arm64-apple-macosx/debug/MirageShare.build/MirageShareApp~partial.swiftmodule",
+    "swift-dependencies": "/Users/nikita.galaganov/MirageShareApp/.build/index-build/arm64-apple-macosx/debug/MirageShare.build/MirageShareApp.swiftdeps"
+  },
+  "/Users/nikita.galaganov/MirageShareApp/Sources/MirageShare/MirageShareState.swift": {
+    "dependencies": "/Users/nikita.galaganov/MirageShareApp/.build/index-build/arm64-apple-macosx/debug/MirageShare.build/MirageShareState.d",
+    "object": "/Users/nikita.galaganov/MirageShareApp/.build/index-build/arm64-apple-macosx/debug/MirageShare.build/MirageShareState.swift.o",
+    "swiftmodule": "/Users/nikita.galaganov/MirageShareApp/.build/index-build/arm64-apple-macosx/debug/MirageShare.build/MirageShareState~partial.swiftmodule",
+    "swift-dependencies": "/Users/nikita.galaganov/MirageShareApp/.build/index-build/arm64-apple-macosx/debug/MirageShare.build/MirageShareState.swiftdeps"
+  },
+  "/Users/nikita.galaganov/MirageShareApp/Sources/MirageShare/Views/ClientView.swift": {
+    "dependencies": "/Users/nikita.galaganov/MirageShareApp/.build/index-build/arm64-apple-macosx/debug/MirageShare.build/ClientView.d",
+    "object": "/Users/nikita.galaganov/MirageShareApp/.build/index-build/arm64-apple-macosx/debug/MirageShare.build/ClientView.swift.o",
+    "swiftmodule": "/Users/nikita.galaganov/MirageShareApp/.build/index-build/arm64-apple-macosx/debug/MirageShare.build/ClientView~partial.swiftmodule",
+    "swift-dependencies": "/Users/nikita.galaganov/MirageShareApp/.build/index-build/arm64-apple-macosx/debug/MirageShare.build/ClientView.swiftdeps"
+  },
+  "/Users/nikita.galaganov/MirageShareApp/Sources/MirageShare/Views/ContentView.swift": {
+    "dependencies": "/Users/nikita.galaganov/MirageShareApp/.build/index-build/arm64-apple-macosx/debug/MirageShare.build/ContentView.d",
+    "object": "/Users/nikita.galaganov/MirageShareApp/.build/index-build/arm64-apple-macosx/debug/MirageShare.build/ContentView.swift.o",
+    "swiftmodule": "/Users/nikita.galaganov/MirageShareApp/.build/index-build/arm64-apple-macosx/debug/MirageShare.build/ContentView~partial.swiftmodule",
+    "swift-dependencies": "/Users/nikita.galaganov/MirageShareApp/.build/index-build/arm64-apple-macosx/debug/MirageShare.build/ContentView.swiftdeps"
+  },
+  "/Users/nikita.galaganov/MirageShareApp/Sources/MirageShare/Views/HostView.swift": {
+    "dependencies": "/Users/nikita.galaganov/MirageShareApp/.build/index-build/arm64-apple-macosx/debug/MirageShare.build/HostView.d",
+    "object": "/Users/nikita.galaganov/MirageShareApp/.build/index-build/arm64-apple-macosx/debug/MirageShare.build/HostView.swift.o",
+    "swiftmodule": "/Users/nikita.galaganov/MirageShareApp/.build/index-build/arm64-apple-macosx/debug/MirageShare.build/HostView~partial.swiftmodule",
+    "swift-dependencies": "/Users/nikita.galaganov/MirageShareApp/.build/index-build/arm64-apple-macosx/debug/MirageShare.build/HostView.swiftdeps"
+  },
+  "/Users/nikita.galaganov/MirageShareApp/Sources/MirageShare/Views/SettingsView.swift": {
+    "dependencies": "/Users/nikita.galaganov/MirageShareApp/.build/index-build/arm64-apple-macosx/debug/MirageShare.build/SettingsView.d",
+    "object": "/Users/nikita.galaganov/MirageShareApp/.build/index-build/arm64-apple-macosx/debug/MirageShare.build/SettingsView.swift.o",
+    "swiftmodule": "/Users/nikita.galaganov/MirageShareApp/.build/index-build/arm64-apple-macosx/debug/MirageShare.build/SettingsView~partial.swiftmodule",
+    "swift-dependencies": "/Users/nikita.galaganov/MirageShareApp/.build/index-build/arm64-apple-macosx/debug/MirageShare.build/SettingsView.swiftdeps"
+  },
+  "/Users/nikita.galaganov/MirageShareApp/Sources/MirageShare/Views/StreamWindowView.swift": {
+    "dependencies": "/Users/nikita.galaganov/MirageShareApp/.build/index-build/arm64-apple-macosx/debug/MirageShare.build/StreamWindowView.d",
+    "object": "/Users/nikita.galaganov/MirageShareApp/.build/index-build/arm64-apple-macosx/debug/MirageShare.build/StreamWindowView.swift.o",
+    "swiftmodule": "/Users/nikita.galaganov/MirageShareApp/.build/index-build/arm64-apple-macosx/debug/MirageShare.build/StreamWindowView~partial.swiftmodule",
+    "swift-dependencies": "/Users/nikita.galaganov/MirageShareApp/.build/index-build/arm64-apple-macosx/debug/MirageShare.build/StreamWindowView.swiftdeps"
+  }
+}
